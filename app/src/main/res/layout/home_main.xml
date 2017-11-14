@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fragment"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb01"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/player"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/color" />
+
+        <RadioButton
+            android:id="@+id/rb02"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/fenglei"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/color" />
+
+        <RadioButton
+            android:id="@+id/rb03"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/gouwuche"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@drawable/color" />
+
+        <RadioButton
+            android:id="@+id/rb04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/geren"
+            android:gravity="center"
+            android:text="个人"
+            android:textColor="@drawable/color" />
+    </RadioGroup>
+</LinearLayout>

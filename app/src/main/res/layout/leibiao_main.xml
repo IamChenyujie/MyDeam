@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF5001"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/shaomiaoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/ic_normal_code" />
+
+        <EditText
+            android:id="@+id/sousuoa"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#DD3000"
+            android:drawableRight="@mipmap/ic_normal_search"
+            android:gravity="center"
+            android:hint="搜索一下"
+            android:textColorHint="#ffffff"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/liaotiana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/ic_normal_message" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/leibiao_tv"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="综合排序" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/leibiao_tvs"
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="销量优先" />
+
+        <TextView
+            android:id="@+id/leibiao_tvss"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:paddingLeft="24dip"
+            android:paddingRight="24dip"
+            android:text="筛选" />
+
+        <ImageView
+            android:id="@+id/leibiao_image"
+            android:background="#FFFFFF"
+            android:layout_width="56dip"
+            android:layout_height="40dip"
+            android:src="@mipmap/ic_goods_list_ver"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/leibiao_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="#FF5001"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ExpandableListView
+            android:id="@+id/fgw_ex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null" />
+        <!--<com.baoyz.swipemenulistview.SwipeMenuListView-->
+            <!--android:id="@+id/fgw_lv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="#ffffff">
+
+        <CheckBox
+            android:id="@+id/fgw_ck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dip"
+            android:text="总价格为:36575.0"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/fgw_tv"
+            android:layout_width="120dip"
+            android:layout_height="40dip"
+            android:background="#FF5001"
+            android:gravity="center"
+            android:text="去结算"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
